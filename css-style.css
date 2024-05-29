@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    flex-direction: row;
+    min-height:100vh;
+    margin:0;
+}
+
+.col-1{
+    background:peru;
+    display:flex;
+    flex:1;
+}
+.col-2{
+    background: palevioletred;
+    flex:5;
+    flex-direction: column;
+}
+
+.content{
+    display:flex;
+    flex-direction:row;   
+}
+
+.content > article {
+    background: salmon;
+    min-height: 60vh;
+    flex:3;
+}
+
+.content > aside{
+    background: sandybrown;
+    flex:1;
+
+}
+
+header, footer{
+    background: chocolate;
+    height: 20vh;
+}
+
+header,footer,nav,article,aside{
+    padding:15px;
+    font-size: 30px;
+}
